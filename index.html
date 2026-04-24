@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>...</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #0d0d0d;
+      color: #ffffff;
+      text-align: center;
+      padding: 24px;
+    }
+
+    main {
+      max-width: 520px;
+    }
+
+    h1 {
+      font-size: 18px;
+      opacity: 0.6;
+      margin-bottom: 20px;
+    }
+
+    #text {
+      font-size: 20px;
+      line-height: 1.6;
+      min-height: 60px;
+    }
+
+    /* cursore */
+    #text::after {
+      content: "|";
+      animation: blink 1s infinite;
+      margin-left: 4px;
+    }
+
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+
+    .hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .actions {
+      margin-top: 30px;
+      opacity: 0.4;
+      font-size: 14px;
+    }
+
+    a {
+      color: #ff0000;
+      text-decoration: none;
+      display: block;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>attendere…</h1>
+    <p id="text"></p>
+
+    <div class="actions hidden" id="actions">
+      <a id="open-link">apri manualmente</a>
+    </div>
+  </main>
+
+  <script>
+    // 🔹 VIDEO
+    const videoId = "HU_fxw8y-GY";
+    const url = "https://www.youtube.com/watch?v=" + videoId;
+
+    // 🔹 FRASI (metti le tue qui)
+    const frasi = [
+      "Combattenti, di terra, di cielo e di mare",
+      "Si lavora e si produce, per il Fhurer e per il Duce",
+      "Quando c'era lui"
+    ];
+
+    const frase = frasi[Math.floor(Math.random() * frasi.length)];
+    const target = document.getElementById("text");
+
+    // 🔹 TYPING
+    let i = 0;
+    function typing() {
+      if (i < frase.length) {
+        target.textContent += frase[i];
+        i++;
+        setTimeout(typing, 40);
+      } else {
+        // quando finisce di scrivere
+        setTimeout(avviaRedirect, 1200);
+      }
+    }
+
+    typing();
+
+    // 🔹 REDIRECT SICURO
+    function avviaRedirect() {
+      // prova apertura (affidabile)
+      window.location.href = url;
+
+      // fallback visivo (se qualcosa blocca)
+      setTimeout(() => {
+        document.getElementById("actions").classList.remove("hidden");
+        document.getElementById("open-link").href = url;
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
