@@ -18,6 +18,27 @@ const games = [
 
 
     {
+        image: "images/undertale.png",
+        text: "* Stay determined.",
+        sound: "sounds/undertale.mp3"
+    },
+
+
+    {
+        image: "images/undertale.png",
+        text: "* Stay determined.",
+        sound: "sounds/undertale.mp3"
+    },
+
+
+    {
+        image: "images/undertale.png",
+        text: "* Stay determined.",
+        sound: "sounds/undertale.mp3"
+    },
+
+
+    {
         image: "images/deltarune.png",
         text: "The legend begins.",
         sound: "sounds/deltarune.mp3"
