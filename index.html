@@ -1,55 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Opening...</title>
-
-  <style>
-    body{
-      margin:0;
-      height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      background:#000;
-      color:#fff;
-      font-family:Arial,sans-serif;
-    }
-
-    .loader{
-      width:45px;
-      height:45px;
-      border:4px solid #333;
-      border-top:4px solid #ff6600;
-      border-radius:50%;
-      animation:spin 1s linear infinite;
-      margin:auto;
-    }
-
-    @keyframes spin{
-      to{transform:rotate(360deg);}
-    }
-
-    .box{
-      text-align:center;
-    }
-  </style>
-
-  <script>
-    const playlistID = "1234567890";
-
-    const deezerURL =
-      `https://www.deezer.com/playlist/33hHBwKs7nNRX0s93DZXp?autoplay=true&shuffle=true`;
-
-    window.location.replace(deezerURL);
-  </script>
+    <meta charset="UTF-8">
+    <title>Daydream</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="box">
-    <div class="loader"></div>
-    <p>Apertura playlist casuale...</p>
-  </div>
+
+    <div id="container">
+
+        <img id="gameImage" src="" alt="">
+
+        <h1 id="gameText"></h1>
+
+    </div>
+
+
+    <audio id="sound"></audio>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
