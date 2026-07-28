@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+
+#container {
+
+    text-align: center;
+
+    animation: fade 2s;
+
+}
+
+
+#gameImage {
+
+    width: 180px;
+    image-rendering: pixelated;
+
+}
+
+
+#gameText {
+
+    margin-top: 30px;
+
+    font-size: 22px;
+
+    letter-spacing: 2px;
+
+}
+
+
+@keyframes fade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
