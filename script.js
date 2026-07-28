@@ -6,7 +6,7 @@ const games = [
     {
         image: "images/spamton.png",
         text: "Welcome to White Space.",
-        sound: "sounds/omori.mp3"
+        sound: "sounds/mp3"
     },
 
 ];
