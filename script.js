@@ -76,6 +76,7 @@ const games = [
         text: "DETERMINATION",
         sound: "sounds/soul.mp3"
     }
+
 ];
 
 
