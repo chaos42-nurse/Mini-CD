@@ -5,10 +5,77 @@ const games = [
 
     {
         image: "images/spamton.png",
-        text: "Welcome to White Space.",
-        sound: "sounds/mp3"
+        text: "You are a [BIG SHOT]",
+        sound: "sounds/spamton.mp3"
     },
 
+
+    {
+        image: "images/frisk.png",
+        text: "*Despite everything, it's still you",
+        sound: "sounds/frisk.mp3"
+    },
+
+    {
+        image: "images/frisk.png",
+        text: "*It,s you",
+        sound: "sounds/frisk.mp3"
+    },
+
+    {
+        image: "images/omori.png",
+        text: "* Stay determined.",
+        sound: "sounds/undertale.mp3"
+    },
+
+
+    {
+        image: "images/sans.png",
+        text: "*Hey pal",
+        sound: "sounds/sans.mp3"
+    },
+
+
+    {
+        image: "images/lancer.png",
+        text: "*Splat",
+        sound: "sounds/lancer.mp3"
+    },
+
+
+    {
+        image: "images/friend.png",
+        text: "* Stay determined.",
+        sound: "sounds/undertale.mp3"
+    },
+
+
+    {
+        image: "images/creepy.png",
+        text: "The legend begins.",
+        sound: "sounds/deltarune.mp3"
+    }
+
+
+    {
+        image: "images/punpun.png",
+        text: "*Oyasumi, punpun",
+        sound: "sounds/punpun.mp3"
+    },
+
+
+    {
+        image: "images/soul.png",
+        text: "But it refuse",
+        sound: "sounds/soul.mp3"
+    }
+
+
+    {
+        image: "images/soul.png",
+        text: "DETERMINATION",
+        sound: "sounds/soul.mp3"
+    }
 ];
 
 
@@ -47,4 +114,4 @@ setTimeout(() => {
 
     window.location.replace(playlist);
 
-}, 4000);
+}, 4000); 
