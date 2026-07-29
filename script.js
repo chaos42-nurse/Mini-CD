@@ -52,7 +52,7 @@ const games = [
 
     {
         image: "images/punpun.png",
-        text: "*Oyasumi, punpun",
+        text: "Oyasumi, punpun",
         sound: "sounds/punpun.mp3"
     },
 
