@@ -58,7 +58,7 @@ const games = [
 
     {
         image: "images/soul.png",
-        text: "But it refuse",
+        text: "But it refused",
         sound: "sounds/soul.mp3"
     },
 
